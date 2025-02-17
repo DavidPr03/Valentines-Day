@@ -3,6 +3,7 @@ body {
     background-color: #ffe6f2;
     text-align: center;
     padding: 20px;
+    margin: 0;
 }
 
 .container {
@@ -16,11 +17,14 @@ body {
 
 h1 {
     color: #d63384;
+    font-size: 24px;
 }
 
 .poema {
     font-style: italic;
     color: #555;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -39,6 +43,21 @@ h1 {
 
 video {
     width: 100%;
-    max-width: 500px;
+    max-width: 100%;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .poema {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 }
