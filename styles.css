@@ -1,3 +1,4 @@
+/* Estilos globales */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffe6f2;
@@ -20,6 +21,7 @@ h1 {
     font-size: 24px;
 }
 
+/* Estilo para el poema */
 .poema {
     font-style: italic;
     color: #555;
@@ -27,6 +29,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Estilos de los botones */
 .btn {
     display: inline-block;
     margin: 10px;
@@ -41,12 +44,24 @@ h1 {
     background-color: #e63950;
 }
 
-video {
+/* Estilos para el video */
+#videoContainer {
+    position: relative;
+    padding-bottom: 56.25%; /* Mantiene la relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
     width: 100%;
-    max-width: 100%;
-    border-radius: 10px;
 }
 
+#videoContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Medios para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 20px;
